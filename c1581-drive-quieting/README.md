@@ -246,6 +246,14 @@ After completing the modifications:
 1. **Reduced Noise** and **Enhanced Reliability**
    * Drive noise has been significantly reduced, resulting in much quieter operation. 
    * Correct Step Rate The stepper motor now operates at the proper speed (3ms step rate), aligning with the JU-363 drive mechanism's specifications.
+
+   [see spectroid.jpg](spectroid.jpg)
+
+   | Firmware | WD controller      | Sound level                       |
+   | -------- | ------------------ | --------------------------------- |
+   | orginal  | both 1770 and 1772 | ~ -45dB (loud) for longer time    |
+   | modded   | for 1772           | ~ -60dB (quiet) for short time    |
+
 2. **Patched Firmware Compatibility**: The patched firmware functions reliably with WD1772 and VL1772 controllers.
 3. **Functional Self-Tests**:
    * **SELF TEST DIAGNOSTICS**: Successfully re-enabled in the ROM. During initialization, the self-test verifies the zero page, ROM, and RAM, confirming the hardware's integrity. The C1581 now passes the self-test without errors.
